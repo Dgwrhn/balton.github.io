@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(4, 4, 68);
+        }
+        /* image code */
+        .topimage{
+            width: 200px;
+            height: 200px;
+            filter: grayscale(100%);
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .topimage:hover{
+           filter: grayscale(0%);
+        }
+        /* line code 'br' */
+        .line{
+            box-shadow: 32px 11px 23px rgb(85, 101, 248);
+            border: 1px solid rgb(56, 48, 48);
+        }
+           /* the intoduction */
+           .hellow{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            animation: typing 10s infinite steps(100) forwards;
+            overflow: hidden;
+            width: 0;
+            white-space: nowrap;
+           
+
+           }
+           @keyframes typing{
+            0%{
+                width: 0;
+            }
+            100%{
+            width: 100%;
+            }
+           }
+           /* buttons */
+           #buttonbox{
+            background-color: blue;
+         width: 100px;
+         height: 30px;
+         border: none;
+         border-radius: 4px;
+         color: #fff;
+         font-weight: 100;
+         cursor: pointer;
+           }
+           #buttonbox2{
+            background-color:  rgb(4, 4, 68);
+            width: 100px;
+         height: 30px;
+         border: 1px solid rgb(255, 254, 252);
+         border-radius: 4px;
+         color: #fff;
+         font-weight: 100;
+         cursor: pointer;
+           }
+           #buttonbox:active{
+            background-color: rgb(104, 104, 247);
+           }
+           #buttonbox2:active{
+            background-color:  rgb(95, 95, 209);
+           }
+           /* projectshow case */
+           .Projects{
+                 background-color:  rgb(5, 5, 102);
+           }
+           .boxproject{
+            background-color: blue;
+            width: 400px;
+            border-radius: 6px;
+            height: auto;
+            height: 720px;
+           }
+           .imagebox1{
+            width: 400px;
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+            margin-top: 0%px;
+            cursor: pointer;
+           }
+           .showoff{
+            color: #f5f1f1;
+            text-align: 40% left;
+           }
+           /* h3 */
+           .myh3{
+            color: #c5bcbc;
+            text-align: left;
+            margin: 13px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            letter-spacing: 6px;
+           }
+           .secondh3{
+            color: #f5f1f1;
+            font-weight: bolder;
+            margin-top: 3px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+           }
+           .myspan{
+            background-color: #2a2731;
+            font-weight: bold;
+            color: white;
+            border-radius: 3px;
+            border: none;
+            width: 200px;
+            height: 22px;
+            text-align: center;
+
+           }
+           .myp1s{
+            color: aqua;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+           }
+           /* live site */
+                 a{
+                    text-decoration: none;
+                    color: aliceblue;
+                 }
+           .link1{
+            margin-top: 0%;
+            background: linear-gradient(to right, rgb(5, 5, 116), rgb(55, 55, 100));
+            width: 280px;
+            border-radius: 4px;
+            height: 35px;
+           }
+           /* my skills starts here */
+
+           .skiilbox{
+            background: linear-gradient(to right, blue, rgb(63, 63, 145));
+            width: 150px;
+            height: 50px;
+            text-align: center;
+            border-radius: 6px;
+            text-align: center;
+            color: #fff;
+            box-shadow: 0px 0px 5px rgb(125, 163, 233);
+           }
+           .skiilbox:hover{
+            background: linear-gradient(to right,rgb(45, 45, 110) , rgb(3, 3, 201));
+            transform: 8s all ease-in-out;
+            box-shadow: 0px 0px 0px;
+           }
+           .skillword{
+            color: #fff;
+            letter-spacing: 12px;
+            margin-top: 30px;
+           }
+           /* communicationbox */
+           .communicationbox{
+            color: #3e939e;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin-top: 40px;
+           }
+    /* form */
+    .formsfield{
+        background-color: rgb(4, 4, 53);
+
+    }
+           /* labes  */
+           .labelbox{
+            color: #f5f1f1;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            letter-spacing: 5px;
+           }
+           /* inputs */
+           .inputbox{
+            width: 350px;
+            overflow: hidden;
+            border: none;
+            border-radius: 3px;
+            height: 32px;
+            text-align: center;
+            background-color: #f5f1f1;
+           }
+           /* submit */
+           .submitbox{
+            width: 200px;
+            height: 31px;
+        border: none;
+    border-radius: 4px;
+    margin-top: 6px;
+    background-color: blue;
+    margin-bottom: 6px;
+    color: #fff;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+/* chat button */
+        .myh2box{
+           color: #e4d7d7;
+           background-color: rgb(9, 9, 121);
+           width: 190px;
+           height: 30px;
+           float: center;
+           border-radius: 4px;
+           border: none;
+        }
+        .myh2box:hover{
+            background-color: rgb(19, 19, 104);
+        }
+        [popover]{
+            border: none;
+            width: 400px;
+            height: 200px;
+        }
+        /* footer */
+        #footer{
+            background-color: #281c44;
+            overflow: hidden;
+            height: 40px;
+            text-align: center;
+            color: rgb(52, 57, 61);
+        }
+        .navbox{
+            display: inline;
+            font-size: 24px;
+            gap: 15px;
+            margin: 18px;
+            margin-top: 6px;
+            filter: grayscale(100%);
+            color: #272330;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        .mya{
+            color: #d8e1fd;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ssempebwa balton alexander</title>
+</head>
+<body id="background">
+    <center>
+    <br>
+    <br>
+    <hr class="line">
+    <img src="main.jpeg" alt="top" class="topimage">
+    <h2 class="hellow"><span style="color: blue;">HELLO, MY NAME IS</span>
+        <br>
+        <span style="color: #f5f1f1;"> SSEMPEBWA BALTON ALEXANDER</span>
+        <br>
+        <span style="color: rgb(139, 125, 127);">FRONTEND DEVELOPER</span></h2>
+    <div class="buttons">
+        <button id="buttonbox2" onclick="about()">ViewAbout</button>
+        <button id="buttonbox" onclick="haired()">Hire</button>
+    </div>
+    <br><br>
+    <div class="Projects">
+        <!-- here is the calculator -->
+         <br>
+         <h2 class="showoff">Project ShowCase</h2>
+    <div class="boxproject">
+        <img src="calculator.png" alt="img" class="imagebox1">
+         <h3 class="myh3">calculator</h3>
+         <h3 class="secondh3">Kanban Board</h3>
+         <h4 class="myspan">HTML</h4>
+         <h4 class="myspan">JS</h4>
+         <h4 class="myspan">CSS</span></h4>
+         <p class="myp1s">Featuring a user friendly design</p>
+         <a href="calculator.html"><h2 class="link1">Live Site</h2></a>
+    </div>
+    <br>
+    <!-- section for login form -->
+<div class="boxproject">
+        <img src="loginform.png" alt="img" class="imagebox1">
+         <h3 class="myh3">Login form</h3>
+         <h3 class="secondh3">Kanban Board</h3>
+        <h4 class="myspan"> HTML</h4>
+        <h4 class="myspan">CSS</h4>
+         <p class="myp1s">Featuring a user friendly design</p>
+         <br><br>
+         <a href="Login form.html"><h2 class="link1">Live Site</h2></a>
+    </div>
+    <br>
+    <!-- section for profile -->
+    <div class="boxproject">
+        <img src="profile.png" alt="img" class="imagebox1">
+         <h3  class="myh3">Profile</h3>
+         <h3  class="secondh3">Kanban Board</h3>
+         <h4 class="myspan"><span class="myspan">HTML</span></h4>
+         <h4 class="myspan"><span class="myspan">CSS</span></h4>
+         <p class="myp1s">Featuring a user friendly design</p>
+         <br><br><br><br>
+         <a href="profile.html"><h2 class="link1">Live Site</h2></a>
+    </div>
+    <br>
+    <!-- section for school -->
+    <div class="boxproject">
+        <img src="School.png" alt="img" class="imagebox1">
+         <h3 class="myh3">Welden School</h3>
+         <h3  class="secondh3">Kanban Board</h3>
+         <h4 class="myspan"><span class="myspan">HTML</span></h4>
+            <h4 class="myspan"><span class="myspan">CSS</span></h4>
+         <p class="myp1s">Featuring a user friendly design</p>
+         <br><br><br><br>
+         <a href="index1.html"><h2 class="link1">Live Site</h2></a>
+    </div>
+    </div>
+    <!-- scetion for skils -->
+    <div class="boxproject2">
+<h3 class="skillword">My Skills</h3>
+<div class="skillflex">
+    <div class="subbox">
+<h3 class="skiilbox">JS</h3>
+<h3 class="skiilbox">HTML</h3>
+</div>
+<div class="subbox2">
+<h3 class="skiilbox">CSS</h3>
+<h3 class="skiilbox">PHP</h3>
+</div>
+</div>
+    </div>
+    <!-- communication -->
+    <div class="communicationbox">
+        <h3 style="color: #fff;">Communication</h3>
+        <p>I firmly belive that effective communication is a vital aspect of success.</p>
+        <p>Throught out my experiences, i have consistently demonstrated steong communication skills.</p>
+        <p>i belive in actively listening to other, value diverse perspectives, and i am eager to transition my communication skills to a developer team.</p>
+        <h3 style="color: #fff;">Creativity</h3>
+        <p>I find joy in exploring innovative approaches to frontend development.</p>
+        <p>I am able to bring unique perspectives to my developmeent by blending technical and artistic mindset .</p>
+        <p>I often gather the materails i have learned, and combine them to achieve impactful results.</p>
+        <h3 style="color: #fff;">Collaboration</h3>
+       <p> I thrive in Collaborative environments where teamwork fuels success. i enjoy sharing ideas, learning from others and tackling challenges as ateam .</p>
+       <p>I value  clear communication and enjoy sharing knowledge, being part of a team means learning from each other and achieving great results togrther</p>
+       <h3 style="color: #fff;">Let's Connect</h3>
+       <h4 style="color: #e0caca;"> Get In Touch</h4>
+       <p>Let's Collaborate and create something amazing togrther!</p>
+       <p>I'm passionate about work with others,whether it's taking on exciting new projects, brainstoming innovative ideas, simply having a chat about all things code, feel free to reach out,and </p>
+       <p>Let's bring our ideas to life! fill out the form or send me an Email</p>
+    </div>
+    <div class="formsfield" popover id="confirm">
+<form class="balton11">
+  <label for="fullName" class="labelbox">FullName</label>
+  <br>
+  <input type="text" name="FullName" value="" id="fullName" class="inputbox" placeholder="Enter Name">
+<br>
+<label for="Email"  class="labelbox">Email</label>
+<br>
+<input type="email" name="Email" value="" id="email" class="inputbox" placeholder="Enter Email">
+<br>
+<input type="submit" class="submitbox" id="mysubmit" onclick="submitbox()">
+<br>
+</form>
+    </div>
+    </center>
+    <center>
+    <button class="myh2box" popovertarget="confirm">Let's Chat &copy;</button>
+    </center>
+    <br>
+    <footer>
+    <div id="footer">   
+        <p class="navbox"><a href="index.html" class="mya">Home</a></p>
+        <p class="navbox"><a href="channels.html" class="mya">Channels</a></p>
+        <p class="navbox"><a href="about.html" class="mya">About</a></p>
+    </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

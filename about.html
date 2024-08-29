@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        html, body{
+            width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(4, 4, 68); 
+        }
+       /* topimage */
+.topimage{
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    filter: grayscale(100%);
+}
+.topimage:hover{
+    filter: grayscale(0%);
+}
+.box1{
+    background-color: rgb(14, 14, 80);
+    width: 470px;
+    border-radius: 6px;
+    border-top-left-radius: 6px solid red;
+}
+.labelbox{
+    color: bisque;
+    letter-spacing: 5px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-shadow: 1px 1px 20px;
+}
+.name{
+    color: rgb(112, 245, 245);
+    font-size: 26px;
+}
+h2{
+    color: rgb(112, 245, 245);
+    font-size: 26px; 
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+hr{
+    color: #2a2731;
+    background-color: #2a2731;
+}
+        #footer{
+            background-color: #281c44;
+            overflow: hidden;
+            height: 40px;
+            text-align: center;
+            color: azure;
+        }
+        .navbox{
+            display: inline;
+            font-size: 24px;
+            gap: 15px;
+            margin: 18px;
+            filter: grayscale(100%);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        a{
+            text-decoration: none;
+            color: rgb(112, 245, 245);
+        }
+        .legend1{
+            color: rgb(186, 186, 211);
+            font-size: 23px;
+        }
+        /* detailbox */
+        .detailbox{
+            border: 1px solid white;
+            height: auto;
+            border-radius: 4px;
+            color: rgb(235, 227, 212);
+        }
+        .fieldset{
+          border-radius: 4px;  
+          border: 1px dotted blue;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <br><br>
+    <!-- my image -->
+     <center>
+        <div class="box1">
+     <img src="balton.jpeg" alt="" class="topimage">
+     <br>
+     <fieldset class="fieldset">
+        <legend class="legend1">About me</legend>
+<label for="name" class="labelbox">Name:</label>
+<h2 class="name">SsempebwaBalton</h2>
+<label for="age" class="labelbox">Age</label>
+<h2>i am 18years</h2>
+<label for="country" class="labelbox">Country</label>
+<h2>Live in Uganda</h2>
+<label for="work" class="labelbox">Work</label>
+<h2>FrontEnd developer</h2>
+<label for="email" class="labelbox">Email</label>
+<h2><a href="Ssempebwabalton@gmail.com">Ssempebwabalton@gmail.com</a></h2>
+<label for="school" class="labelbox">School</label>
+<h2>Went to Weldenschool mbarara</h2>
+<label for="number" class="labelbox">Phone number</label>
+<h2>0757190211</h2>
+<details class="detailbox">
+    <summary >Details</summary>
+    <p>Hey; am by the names SsempebwaBalton, and am a frontend developer.</p>
+    <p>I live in Uganda/kasese, i started web developmeent when i was 16 and i love it </p>
+</details>
+</div>
+</fieldset>
+</center>
+    <br>
+    <footer>
+    <div id="footer">
+        <p class="navbox"><a href="index.html">Home</a></p>
+        <p class="navbox"><a href="channels.html">Channels</a></p>
+        <p class="navbox"><a href="about.html">About</a></p>
+    </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

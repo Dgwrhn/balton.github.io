@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        html, body{
+          background-color: rgb(68, 66, 66);
+         width: 100%;
+         height: 100%;
+         padding: 0;
+         margin: 0;
+         color: #fff;
+        }
+        .motherbox{
+           background-color: rgb(46, 44, 41);
+           margin-top: 3%;
+          max-width: 400px;
+           height: 700px;
+           border-radius: 4px;
+           margin: 0;
+           padding: 0;
+        }
+        h2{
+            text-align: left;
+            margin: 9px;
+            margin-top: 2%;
+        }
+        .label1{
+            text-align: left;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+         gap: 4px;
+        }
+        .inputbox{
+            width: 280px;
+            height: 30px;
+            border-radius: 4px;
+            border: 1px solid black;
+           margin: 12px;
+        }
+        #button{
+            width: 280px;
+            height: 35px;
+            border-radius: 4px;
+            border: 1px solid black;
+           margin: 12px;
+           background-color: #fff;
+        }
+        .radio1{
+            float: left;
+        }
+        #allowed{
+            display: flex;
+            margin: 4%; 
+            margin-top: 0%;
+        }
+        #allowed1{
+            width: 15px;
+            height: 15px;
+        }
+        #allowed2{
+            float: left;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+        #messages{
+            margin-top: 0%;
+        }
+        #messages1{
+            width: 300px;
+            border: 1px solid black;
+            height: 80px;
+            border-radius: 7px;
+        }
+#mysubmit{
+    width: 300px;
+    height: 36px;
+    background-color: rgb(53, 107, 53);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+}
+#mysubmit:active{
+    background-color: grey;
+}
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+  <div class="motherbox">
+    <form>
+        <br>
+    <h2>Content us</h2>
+    <label for="firstname" class="label1">First Name *</label><br>
+    <input type="text" name="firstname" id="firstname" class="inputbox">
+    <br>
+    <label for="firstname" class="label1">Last Name *</label><br>
+    <input type="text" name="Lastname" id="Lastname" class="inputbox">
+    <br>
+    <label for="firstname" class="label1">Email Address *</label><br>
+    <input type="email" name="Email" id="Email" class="inputbox">
+    <br>
+    <div class="buttons">
+        <label for="button"  class="label1">Query Type *</label><br>
+        <button id="button"><input type="radio" name="General Enquriry" class="radio1">General Enquriry</button>
+        <br><br>
+        <button id="button"><input type="radio" name="Support Request"  class="radio1">Support Request</button>
+    </div>
+    <br>
+    <div id="messages">
+    <label for="messages" class="label1">Messages *</label><br>
+        <input type="text" id="messages1">
+        <div id="allowed">
+        <input type="checkbox" name="allowed1" id="allowed1">
+        <p id="allowed2">I consent to being contactd by the team *</p>
+        </div><brs>
+        <input type="submit" id="mysubmit">
+    </form>
+    </div>
+  </div> 
+  </center> 
+</body>
+</html>

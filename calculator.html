@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgb(26, 21, 21);
+        padding: 0;
+    }
+    #mother{
+        padding: 12px;
+ margin: 12px;
+ 
+ width: 250px;
+ height: 370px;
+ border-radius: 12px;
+ margin: 0;
+ padding: 0;
+    }
+#keys{
+    display: grid;
+    grid-template-columns: repeat(4, 0fr);
+    gap: 0.5rem;
+    margin: 12px;
+}
+button{
+    background-color: black;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: white;
+    border: none;
+    font-size: 25px;
+    margin: 4%;
+    padding: 12px;
+}
+#screen{
+width: 230px;
+border: none;
+height: 37px;
+overflow: hidden;
+margin: 6px;
+background-color: rgb(110, 101, 101);
+color: white;
+font-weight: 12px;
+text-align: center;
+font-size: 24px;
+}
+button:hover{
+    background-color: rgb(121, 89, 89);
+}
+button:active{
+  background-color: rgb(54, 45, 45);  
+}
+.color{
+    background-color: rgb(180, 180, 25);
+}
+.color:hover{
+    background-color: rgb(95, 95, 3);
+}
+.color:active{
+    background-color: rgb(238, 238, 6);
+}
+</style>
+<body>
+    <br>
+    <br>
+    <center>
+  <div id="mother">
+    <input type="text" readonly id="screen">
+    <br>
+<br><br><br><br>
+    <div id="keys">
+        <button onclick="key('1')">1</button>
+        <button onclick="key('2')">2</button>
+        <button onclick="key('3')">3</button>
+        <button onclick="key('4')">4</button>
+        <button onclick="key('5')">5</button>
+        <button onclick="key('6')">6</button>
+        <button onclick="key('7')">7</button>
+        <button onclick="key('8')">8</button>
+        <button onclick="key('9')">9</button>
+        <button onclick="key('0')">0</button>
+        <button onclick="key('+')" class="color">+</button>
+        <button onclick="key('-')" class="color">-</button>
+        <button onclick="key('/')" class="color">/</button>
+        <button onclick="key('*')" class="color">*</button>
+        <button onclick="clearscreen()" class="color">c</button>
+        <button onclick="equals()" class="color">=</button>
+         
+        
+        <button onclick="key('(')">(</button>
+        <button onclick="key(')')"> ) </button>
+    </div>
+  </div>
+    </div>
+    </center>
+    <script>
+ const display = document.getElementById("screen");
+ function key(input){
+    display.value += input;
+ } 
+ function clearscreen(){
+    display.value = '';
+ }
+ function equals(){
+    try{
+    display.value = eval(display.value);
+    }
+    catch(error){
+        display.value ='error';
+    }
+ }
+ 
+ 
+ let message = 'i love u balton';
+ let all = function(){
+ age = 18;
+ sex = male;
+ school = welden;
+ love = asher;
+ lovelife = broken;
+ work = webdeveloper;
+ time = 12.00;
+ }
+ let sex = 12;
+ console.log('helloe this is my life' + all)
+    </script>
+</body>
+</html>
